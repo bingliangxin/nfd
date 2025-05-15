@@ -1,0 +1,45 @@
+
+    <style>
+        .ad-container {
+            display: flex;
+            flex-direction: column; /* 垂直排列图片 */
+            gap: 20px; /* 图片间距 */
+            width: 960px; /* 固定容器宽度 */
+            height: auto; /* 高度自适应内容 */
+        }
+
+        .ad-link {
+            display: block;
+            width: 100%; /* 链接占满容器宽度 */
+            height: 80px; /* 固定图片容器高度 */
+            border-radius: 12px; /* 容器圆角 */
+            overflow: hidden; /* 裁剪超出部分 */
+            transition: transform 0.3s ease; /* 悬停动画 */
+        }
+
+        .ad-image {
+            width: 100%; /* 图片撑满容器宽度 */
+            height: 100%; /* 图片撑满容器高度 */
+            object-fit: cover; /* 保持比例并覆盖容器 */
+            display: block; /* 消除底部间隙 */
+        }
+
+        .ad-link:hover {
+            transform: translateY(-2px); /* 悬停上移 */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* 悬停阴影 */
+        }
+    </style>
+    <div class="ad-container">
+        <a href="https://baidu.com" target="_blank" class="ad-link">
+            <img src="https://www.aish123.vip/data/attachment/block/47/47fe160099833488b7803ad735ffebd0.jpg" alt="广告图1" class="ad-image">
+        </a>
+        <a href="https://baidu.com" target="_blank" class="ad-link">
+            <img src="https://www.aish123.vip/data/attachment/block/47/47fe160099833488b7803ad735ffebd0.jpg" class="ad-image">
+        </a>
+        <a href="https://baidu.com" target="_blank" class="ad-link">
+            <img src="https://www.aish123.vip/data/attachment/block/47/47fe160099833488b7803ad735ffebd0.jpg" class="ad-image">
+        </a>
+        <a href="https://baidu.com" target="_blank" class="ad-link">
+            <img src="https://www.aish123.vip/data/attachment/block/47/47fe160099833488b7803ad735ffebd0.jpg" class="ad-image">
+        </a>
+    </div>
